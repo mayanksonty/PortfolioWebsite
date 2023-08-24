@@ -4,7 +4,7 @@
 }
 
 body{
-    background-color: rgb(17, 17, 118);
+    background-color: rgb(2, 2, 46);
     color: white;
 }
 
@@ -13,7 +13,7 @@ nav{
     justify-content: space-around;
     align-items: center;
     height: 60px;
-    background-color: rgb(77, 77, 153);
+    background-color: rgb(2, 2, 95);
 }
 
 nav ul{
@@ -25,4 +25,44 @@ nav ul{
 nav ul li{
     list-style: none;
     margin: 0 23px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-family: 'Poppins',sans-serif;
+    color: white;
+}
+
+nav ul li a:hover{
+    color: rgb(147, 147, 210);
+    font-size: 1.02rem;
+}
+
+.leftSide{
+    font-size: 1.5rem;
+    font-family: 'Poppins',sans-serif;
+}
+
+.firstSection{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 80px 0;
+}
+
+.firstSection > div{
+    width: 30%;
+}
+
+.leftSection{
+    font-family: 'Poppins',sans-serif;
+    font-size: 2.5rem;
+}
+
+.rightSection img{
+    width: 80%;
+}
+
+#element{
+    color: rgb(153, 46, 189);
 }
