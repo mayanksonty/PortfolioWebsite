@@ -63,6 +63,57 @@ nav ul li a:hover{
     width: 80%;
 }
 
-#element{
-    color: rgb(153, 46, 189);
+.lavender{
+    color: rgb(247, 75, 75);
+    font-weight: bold;
+}
+
+/* .secondSection{
+    margin: 20px 180px;
+} */
+
+.mainContent{
+    margin: 20px 180px;
+}
+
+.heading{
+    align-items: center;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    
+}
+
+.contentHeadings{
+    margin-top: 60px;
+}
+
+.aboutmeContent div{
+    margin: 30px 0;
+    font-size: 1.4rem;
+    font-family: 'poppins',sans-serif;
+}
+
+.thirdSection hr{
+    margin-top: 160px;
+}
+
+.myWorkContent{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 60px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.thirdLeftPanel{
+    font-size: 2rem;
+}
+
+.thirdRightPanel{
+    font-size: 1.2rem;
+}
+
+.liContent{
+    font-size: 0.8rem;
 }
