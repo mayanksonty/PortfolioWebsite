@@ -8,6 +8,10 @@ body{
     color: white;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 nav{
     display: flex;
     justify-content: space-around;
@@ -34,13 +38,19 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-    color: rgb(147, 147, 210);
+    /* color: rgb(147, 147, 210); */
+    color: rgb(247, 75, 75);
     font-size: 1.02rem;
 }
 
 .leftSide{
     font-size: 1.5rem;
     font-family: 'Poppins',sans-serif;
+}
+
+.leftSide a{
+    text-decoration: none;
+    color: white;
 }
 
 .firstSection{
@@ -80,12 +90,23 @@ nav ul li a:hover{
     align-items: center;
     text-align: center;
     font-family: 'Poppins', sans-serif;
-    font-size: 3rem;
-    
+    font-size: 3rem;   
 }
 
 .contentHeadings{
     margin-top: 60px;
+}
+
+.socialMedia{
+    margin: 30px 0;
+}
+
+.socialMedia i{
+    margin-right: 20px;
+}
+
+.socialMedia i:hover{
+    color: rgb(247, 75, 75);
 }
 
 .aboutmeContent div{
@@ -117,6 +138,17 @@ nav ul li a:hover{
     margin-left: 300px; 
 }
 
+.thirdRightPanel li a{
+    text-decoration: none;
+    color: white;    
+}
+
+.thirdRightPanel li a:hover{
+    text-decoration: none;
+    color: rgb(247, 75, 75);
+    font-size: 1.23rem;    
+}
+
 .liContent{
     font-size: 0.8rem;
 }
@@ -136,6 +168,7 @@ nav ul li a:hover{
 
 .contactForm div{
     margin: 10px 0;
+    text-align: center;
 }
 
 .contactForm div input{
@@ -163,4 +196,13 @@ nav ul li a:hover{
     font-size: 1rem;
     font-family: 'Poppins',sans-serif;
     border-radius: 5px;
+}
+
+footer{
+    background-color: rgb(247, 75, 75);
+    height: 50px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Poppins',sans-serif;
+    padding-top: 15px;
 }
