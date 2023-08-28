@@ -1,79 +1,89 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-body{
+body {
     background-color: rgb(2, 2, 46);
     color: white;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-nav{
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
     display: flex;
+    width: 100%;
     justify-content: space-around;
     align-items: center;
-    height: 60px;
     background-color: rgb(2, 2, 79);
 }
 
-nav ul{
+nav ul {
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    width: 100%;
 }
 
-nav ul li{
+.navbar-logo {
+    flex: 1;
+    font-size: 1.5rem;
+    user-select: none;
+}
+
+.navbar-toggle {
+    display: none;
+}
+
+nav ul li {
     list-style: none;
-    margin: 0 23px;
+    padding: 1rem;
+
 }
 
-nav ul li a{
+nav ul li a {
     text-decoration: none;
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: white;
 }
 
-nav ul li a:hover{
-    /* color: rgb(147, 147, 210); */
+nav ul li a:hover {
     color: rgb(247, 75, 75);
     font-size: 1.02rem;
 }
 
-.leftSide{
-    font-size: 1.5rem;
-    font-family: 'Poppins',sans-serif;
+main {
+    margin: 80px 80px;
 }
 
-.leftSide a{
-    text-decoration: none;
-    color: white;
-}
-
-.firstSection{
+.firstSection {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     margin: 80px 0;
 }
 
-.firstSection > div{
-    width: 30%;
+.firstSection>div {
+    width: 50%;
 }
 
-.leftSection{
-    font-family: 'Poppins',sans-serif;
+.leftSection {
+    font-family: 'Poppins', sans-serif;
     font-size: 2.5rem;
 }
 
-.rightSection img{
+.rightSection img {
     width: 80%;
 }
 
-.lavender{
+.lavender {
     color: rgb(247, 75, 75);
     font-weight: bold;
 }
@@ -82,44 +92,48 @@ nav ul li a:hover{
     margin: 20px 180px;
 } */
 
-.mainContent{
-    margin: 20px 180px;
+.mainContent {
+    /* margin: 20px 180px; */
 }
 
-.heading{
+.heading {
     align-items: center;
     text-align: center;
     font-family: 'Poppins', sans-serif;
-    font-size: 3rem;   
+    font-size: 3rem;
 }
 
-.contentHeadings{
+.contentHeadings {
     margin-top: 60px;
 }
 
-.socialMedia{
+.socialMedia {
     margin: 30px 0;
 }
 
-.socialMedia i{
+.socialMedia i {
     margin-right: 20px;
 }
 
-.socialMedia i:hover{
+.socialMedia i:hover {
     color: rgb(247, 75, 75);
 }
 
-.aboutmeContent div{
+.aboutmeContent{
+    margin-top: 50px;
+}
+
+.aboutmeContent div {
     margin: 30px 0;
     font-size: 1.4rem;
-    font-family: 'poppins',sans-serif;
+    font-family: 'poppins', sans-serif;
 }
 
-.thirdSection hr{
-    margin-top: 160px;
+.thirdSection hr {
+    margin-top: 100px;
 }
 
-.myWorkContent{
+.myWorkContent {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -127,38 +141,38 @@ nav ul li a:hover{
     font-family: 'Poppins', sans-serif;
 }
 
-.thirdLeftPanel{
+.thirdLeftPanel {
     font-size: 2rem;
     margin-left: 40px;
 }
 
-.thirdRightPanel{
+.thirdRightPanel {
     font-size: 1.2rem;
     margin-right: 130px;
-    margin-left: 300px; 
+    margin-left: 300px;
 }
 
-.thirdRightPanel li a{
+.thirdRightPanel li a {
     text-decoration: none;
-    color: white;    
+    color: white;
 }
 
-.thirdRightPanel li a:hover{
+.thirdRightPanel li a:hover {
     text-decoration: none;
     color: rgb(247, 75, 75);
-    font-size: 1.23rem;    
+    font-size: 1.23rem;
 }
 
-.liContent{
+.liContent {
     font-size: 0.8rem;
 }
 
-.sideProjectDesc{
+.sideProjectDesc {
     font-size: 0.8rem;
     margin: 10px 0;
 }
 
-.contactForm{
+.contactForm {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -166,43 +180,135 @@ nav ul li a:hover{
     margin: 50px 0;
 }
 
-.contactForm div{
+.contactForm div {
     margin: 10px 0;
     text-align: center;
 }
 
-.contactForm div input{
+.contactForm div input {
     text-align: center;
-    width: 600px;
+    width: 100%;
     padding: 6px;
     border: 2px solid black;
     margin: 3px auto;
     font-size: 1rem;
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
     border-radius: 5px;
 }
 
-.formSubmit{
-    padding-left: 10px;
-}
-
-.contactForm div textarea{
+.contactForm div textarea {
     text-align: center;
-    width: 600px;
+    width: 100%;
     height: 100px;
     padding: 6px;
     border: 2px solid white;
     margin: 3px auto;
     font-size: 1rem;
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
     border-radius: 5px;
 }
 
-footer{
+footer {
     background-color: rgb(247, 75, 75);
     height: 50px;
+    line-height: 50px;
     text-align: center;
     font-size: 1.5rem;
-    font-family: 'Poppins',sans-serif;
-    padding-top: 15px;
+    font-family: 'Poppins', sans-serif;
 }
+
+
+
+@media (max-width: 767px) and (min-width: 320px) {
+    nav ul {
+        flex-wrap: wrap;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .active{
+        display: block;
+    }
+
+    main {
+        margin: 10px 2px;
+    }
+
+    .firstSection {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .firstSection>div {
+        width: 100%;
+    }
+
+    .rightSection{
+        display: none;
+    }
+
+    .leftSection {
+        font-size: 2rem;
+    }
+
+    .leftSection div {
+        font-size: 2rem;
+    }
+
+    .thirdSection hr{
+        margin: 50px 50px;
+    }
+
+    .socialMedia{
+        margin-left: 25px;
+    }
+
+    /* About Me */
+
+    .heading hr{
+        margin: 50px 50px;
+    }
+
+    .aboutmeContent div{
+        font-size: 1.1rem;
+        margin: 10px 5px;
+    }
+
+
+    /* My Work Section */
+
+    .myWorkContent {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .contentHeadings{
+        font-size: 1.8rem;
+    }
+
+    .thirdLeftPanel{
+        font-size: 1.1rem;
+        /* margin-left: 5px; */
+        margin: auto;
+    }
+
+    .thirdRightPanel{
+        font-size: 1rem;
+        margin-right: 0px;
+        margin-left: 5px;
+        margin-top: 20px;
+    }
+
+    footer{
+        font-size: 0.8rem;
+    }
+}
+
